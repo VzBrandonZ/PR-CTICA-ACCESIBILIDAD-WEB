@@ -29,19 +29,24 @@ ol,
 ul {
   list-style: none;
 }
+
+
 /*-img format-*/
 img {
   max-width: 100%;
   height: auto;
 }
+
+
 /*-format set for a-*/
 a {
   text-decoration: none;
   color: var(--blanco);
 }
   
-/*--- end of reset ----*/
 
+
+/*--- end of reset ----*/
 :root {
   --Cyan-white-white:#45ECE5;
   --clear-sheet:#00b894;
@@ -56,6 +61,7 @@ a {
   --verde: #7ac943;
   --Very-dark-grayish-blue:#41444b;
 }
+
 
 body,
 header,
@@ -102,6 +108,9 @@ section {
   font-family: var(--secondary-font);
   color: var(--blanco);
 }
+
+
+
 /*-Styles of navigation-*/
 nav {
   width: 100%;
@@ -115,6 +124,8 @@ nav {
   margin: 24px 0;
   width: 100%;
 }
+
+
 
 
 /*- Estilos de la navegacion del usuario-*/

@@ -9,11 +9,13 @@
     <meta name="robots" content="index">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet" /> 
     <link rel="stylesheet" href="css/Styles.css">
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
     <title>Mi Portafolio</title>
 </head>
 
 
 <body>
+    <!--Parte inicial del usuario-->
     <section class="section-user-data">
         <div class="box">
             <img src="images/Brando_Mero.jpg" class="box-header__img" alt="Usuario del portafolio">
@@ -22,6 +24,7 @@
                 <h2 class="subtitle">Curso 4to "A"</h2>
                 <nav class="navigation">
                     <ul class="navigation-option">
+                        <!--Navegacion del usuario-->
                       <li class="navigation-option__item"><a href="#acerca">Acerda de mi</a></li>
                       <li class="navigation-option__item"><a href="#proyectos">Mis Proyectos</a></li>
                       <li class="navigation-option__item"><a href="#contactos">Contacto</a></li>
@@ -33,6 +36,7 @@
 
 
     <main class="main">
+        <!--Section para la informacion del usuario-->
         <section>
             <h2 class="header" id="acerca">Acerca de mi</h2>
             <p class="intro">
@@ -44,7 +48,7 @@
                 gustaria seguir en este camino.
             </p>
         </section>
-
+        <!--Section para las redes sociales.-->
         <section>
             <nav class="navigation-social">
                 <ul class="navigation-social-media">
@@ -70,7 +74,7 @@
             </nav>
         </section>
 
-
+        <!--Section para el carrusel, o tambien galeria de proyectos del usuario-->
         <section>
             <h2 class="header" id="proyectos">Mis Proyectos</h2>
             <div class="carousel">
@@ -109,7 +113,7 @@
         </section>
     </main>
 
-
+    <!-- footer para contactarse con el usuario infresando los siguientes datos al formulario -->
     <footer class="section-contact">
         <h2 class="header" id="contactos">Contacto</h2>
         <p class="intro">Para mandarme un mensaje puedes usar el formulario que sigue</p>
@@ -126,7 +130,7 @@
         </form>
 
     </footer>
-
+    <!-- Las notificaciones para implementarlas con el javaScript-->
     <div class="notification" aria-live="assertive">El formulario fue enviado sin errores</div>
     <div class="modal-container">
         <div class="modal">
@@ -135,6 +139,7 @@
             <button class="modal-button">Cerrar</button>
         </div>
     </div>
+    <!-- Etiqueta que relaciona el html con JavaScript-->
     <script src="JavaScript/index.js" type="text/javascript"></script>
 </body>
 </html>
