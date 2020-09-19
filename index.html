@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafio del usuario">
+    <meta name="author" content="Brando Mero">
+    <meta name="copyright" content="Brando Mero">
+    <meta name="robots" content="index">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet" /> 
+    <link rel="stylesheet" href="css/Styles.css">
+    <title>Mi Portafolio</title>
+</head>
+
+
+<body>
+    <section class="section-user-data">
+        <div class="box">
+            <img src="images/Brando_Mero.jpg" class="box-header__img" alt="Usuario del portafolio">
+            <div class="box-caracter">
+                <h1 class="header">Mero Cepeda Brando Rafael</h1>
+                <h2 class="subtitle">Curso 4to "A"</h2>
+                <nav class="navigation">
+                    <ul class="navigation-option">
+                      <li class="navigation-option__item"><a href="#acerca">Acerda de mi</a></li>
+                      <li class="navigation-option__item"><a href="#proyectos">Mis Proyectos</a></li>
+                      <li class="navigation-option__item"><a href="#contactos">Contacto</a></li>
+                    </ul>
+                  </nav>
+            </div>
+        </div>
+    </section>
+
+
+    <main class="main">
+        <section>
+            <h2 class="header" id="acerca">Acerca de mi</h2>
+            <p class="intro">
+                Hola, Me llamo Brando Rafael Mero Cepeda, naci en Venezuela, Distrito capital - Caracas, tengo
+                20 años, me gusta la programación, los videojuegos, las historias de terror y peliculas, y mi 
+                sueños es llegar a ser un buen programador en un futuro dado, mis temas favoritos se basan en
+                la tecnologia, en los videojuegos y en los misterioso y terrorifico... Ademas esta tarea me enseño
+                un poco mas de accesibilidad para un sitio web, incluso me gusto el diseño web y en un futuro me
+                gustaria seguir en este camino.
+            </p>
+        </section>
+
+        <section>
+            <nav class="navigation-social">
+                <ul class="navigation-social-media">
+                    <li class="navigation-social-media__item">
+                        <a href="https://www.instagram.com/vz_brandon_white/" target="_blank">
+                            <img src="images/logo-instagram.png" alt="instagram de Brandon Mero">
+                            <p class="navigation-social-media-link__text">Instagram</p>
+                        </a>
+                    </li>
+                    <li class="navigation-social-media__item">
+                        <a href="https://www.facebook.com/bran.mero.3" target="_blank">
+                            <img src="images/logo-facebook.png" alt="facebook de Brandon Mero">
+                            <p class="navigation-social-media-link__text">Facebook</p>
+                        </a>
+                    </li>
+                    <li class="navigation-social-media__item">
+                        <a href="https://github.com/VzBrandonZ" target="_blank">
+                            <img src="images/logo-github.png" alt="github de Brandon Mero">
+                            <p class="navigation-social-media-link__text">Github</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+
+        <section>
+            <h2 class="header" id="proyectos">Mis Proyectos</h2>
+            <div class="carousel">
+                <button class="arrow arrow-left" aria-label="backward button"><img src="images/play-button-left.png" alt=""></button>
+                <nav class="carousel-navigation-window">
+                    <ul class="carousel-project-container">
+                        <li class="project1-container">
+                            <button class="project1 project">
+                                <img src="images/project1.png" class="project" alt="Mi primer proyecto">
+                            </button>
+                        </li>
+                        <li class="project2-container">
+                            <button class="project2 project">
+                                <img src="images/project2.png" class="project" alt="Mi segundo proyecto">
+                            </button>
+                        </li>
+                        <li class="project3-container">
+                            <button class="project3 project">
+                                <img src="images/project3.png" class="project" alt="Mi tercero proyecto">
+                            </button>
+                        </li>
+                        <li class="project4-container" aria-hidden="true">
+                            <button class="project4 project" tabindex="-1">
+                                <img src="images/project4.png" class="project" alt="Mi cuarto proyecto">
+                            </button>
+                        </li>
+                        <li class="project5-container" aria-hidden="true">
+                            <button class="project5 project" tabindex="-1">
+                                <img src="images/project5.png" class="project" alt="Mi quinto proyecto">
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="arrow arrow-right" aria-label="forward button"><img src="images/play-button-right.png" alt=""></button>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="section-contact">
+        <h2 class="header" id="contactos">Contacto</h2>
+        <p class="intro">Para mandarme un mensaje puedes usar el formulario que sigue</p>
+        <form class="section-contact-container">
+            <label class="form-label">Nombre</label>
+            <input type="text" arialabel="nombre" id="name"/>
+            <span id="name-error" aria-live="assertive"></span>
+            <br>
+            <label class="form-label">Correo</label>
+            <input type="email" arialabel="correo"/>
+            <br>
+            <label class="message-input form-label">Mensaje<input type="text"/><br></label>
+            <button class="send-button">Enviar</button>
+        </form>
+
+    </footer>
+
+    <div class="notification" aria-live="assertive">El formulario fue enviado sin errores</div>
+    <div class="modal-container">
+        <div class="modal">
+            <h2 class="header" id="modal-header" tabindex="0">Ejemplo de un proyecto mio</h2>
+            <img src="images/project1.png" class="modal-project-image" alt="pantallazo del proyecto"/>
+            <button class="modal-button">Cerrar</button>
+        </div>
+    </div>
+    <script src="JavaScript/index.js" type="text/javascript"></script>
+</body>
+</html>
